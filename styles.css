@@ -1,0 +1,159 @@
+body {
+    margin:0;  
+}
+ul{
+    background-color: #eee;
+    cursor: pointer;
+}
+li{
+    padding: 12px;
+}
+.backimg {
+    background-image: url('FFpos.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100% ;
+    border: solid 5px black;
+}
+.logohead {
+    display: block;
+    height: 180px;
+    
+}
+.logohead a {
+    color: white;
+    float: right;
+    display: inline;
+    font-size: x-large;
+    padding: 70px 30px;
+}
+.logohead a:hover {
+    color: gold;   
+}
+.logo {
+    display: block;
+    text-align: center;
+} 
+.logo h2 {
+    color: white;
+    font-size: xxx-large;
+    font-family: Snell Roundhand, cursive;
+}
+.logo h2:hover {
+    color: cornsilk;
+}
+.logo p{
+    color: white;
+}
+.searchBox {
+    padding-top: 50px;
+    text-align: center;
+    height: 110px;
+}
+/*
+.searchBox select{
+    background-color: white;
+    width: 50%;
+    border-radius: 30px;
+    height: 50px;
+    padding-left: 10px;
+    font-size: small;
+}*/
+.searchBox input {
+    height: 50px;
+    border: none;
+    border-radius: 10px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: medium;
+    cursor: pointer;
+}
+
+#slider{
+    overflow: hidden;
+    margin-top: 50px;
+    margin-left: 200px;
+    margin-right: 200px;
+    border: solid black 4px;
+    border-radius: 50px;
+}
+#slider figure{
+    position: relative;
+    width: 500%;
+    margin: 0;
+    left: 0;
+    animation: 12s slider infinite;
+}
+#slider figure img{
+    float: left;
+    width: 20%;
+    height: 500px;
+}
+
+@keyframes slider{
+    0% {
+        left: 0;
+    }
+    30% {
+        left: 0;
+    }
+    35%{
+        left: -100%;
+    }
+    65%{
+        left: -100%;
+    }
+    70%{
+        left: -200%;
+    }
+    90%{
+        left:-200%;
+    }
+}
+.footer{
+    height: 150px;
+    margin-top: 50px;
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.footer p{
+    margin: 30px;
+}
+.footer a{
+    padding: 15px;
+    color: white;
+}
+.footer a:hover{
+    color: bisque;
+}
+
+/*Chosen*/
+.chosen{
+    width: 50%;
+}
+form .chosen-container-single .chosen-single{
+    height: 50px;
+    border-radius: 30px;
+    padding: 14px;
+    font-size: medium;
+    text-align: left;
+}
+form .chosen-container-single .chosen-single div{
+    display: none;  
+}
+form .chosen-container-single .chosen-search input[type="text"]{
+    border-radius: 50px;
+    padding: 10px;
+}
+form .chosen-container-single .chosen-results{
+    font-size: medium;
+}
+form .chosen-container-single .chosen-results li{
+    padding: 15px;
+    background-color: white;
+    border: solid 1px black;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+}
